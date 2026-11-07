@@ -1,0 +1,16 @@
+Package: sousgradient
+Type : Package
+Title: Algorithme du Sous-Gradient Appliqué au SVM
+Version: 0.1.0
+Authors@R: 
+    person("Erica", " Koko Ndoumbe", email ="ericadaina41@gmail.com", role = c("aut", "cre"))
+Description: Implémente l'algorithme du sous-gradient pour minimiser des fonctions convexes non dérivables,
+             et l'applique à un svm lineaire.Le package fournit des données simulées, des fonction
+              de prédiction et des graphiques de convergences.
+License: MIT + file LICENSE
+Config/roxygen2/version: 8.1.1
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote : 8.1.1
+Imports: 
+    ggplot2
