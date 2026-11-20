@@ -2,17 +2,17 @@
 % Please edit documentation in R/graphiques.R
 \name{tracer_convergence}
 \alias{tracer_convergence}
-\title{Trace la convergence de l'algorithme}
+\title{Plot the convergence of the algorithm}
 \usage{
 tracer_convergence(modeles)
 }
 \arguments{
-\item{modeles}{le resultat de svm_sousgradient() ou une liste nommé
-de resultat à comparer (par exemple list("pas decroissant"= res1, "pas constant"= res2))}
+\item{modeles}{The result of \code{svm_sousgradient()}, or a named list of
+results to compare (for example \code{list("decreasing step" = res1, "constant step" = res2)}).}
 }
 \value{
-un graphique ggplot2
+A \code{ggplot2} plot.
 }
 \description{
-Trace la convergence de l'algorithme
+Plot the convergence of the algorithm
 }

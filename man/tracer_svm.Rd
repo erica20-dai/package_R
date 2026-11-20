@@ -2,22 +2,22 @@
 % Please edit documentation in R/graphiques.R
 \name{tracer_svm}
 \alias{tracer_svm}
-\title{Trace les données et la  droite de separation  du svm}
+\title{Plot the data and the SVM separating line}
 \usage{
 tracer_svm(donnees, modele, xlab = "variable 1", ylab = "variable 2")
 }
 \arguments{
-\item{donnees}{un tableau avec les colonnes x1 ,x2 et y(+1 ou -1)}
+\item{donnees}{A data frame with columns \code{x1}, \code{x2} and \code{y} (+1 or -1).}
 
-\item{modele}{le resultat de svm_sousgradient()}
+\item{modele}{The result of \code{svm_sousgradient()}.}
 
-\item{xlab}{le nom de  laxe horizontal}
+\item{xlab}{Label of the horizontal axis.}
 
-\item{ylab}{le nom  de laxe vertical}
+\item{ylab}{Label of the vertical axis}
 }
 \value{
-un graphique ggplot2
+\code{ggplot2} plot
 }
 \description{
-Trace les données et la  droite de separation  du svm
+Plot the data and the SVM separating line
 }

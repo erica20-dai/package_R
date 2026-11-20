@@ -2,27 +2,27 @@
 % Please edit documentation in R/svm_sousgradient.R
 \name{svm_sousgradient}
 \alias{svm_sousgradient}
-\title{SVM lineaire entrainé par sous-gradient}
+\title{Linear SVM trained by subgradient}
 \usage{
 svm_sousgradient(x, y, lambda = 0.01, n_iter = 200, pas = "decroissant", a = 1)
 }
 \arguments{
-\item{x}{un tableau ou une matrice des variables (une colonne par variable)}
+\item{x}{a data frame or matrix of variables (one column per variable)}
 
-\item{y}{le vecteur des classe(+1 ou -1)}
+\item{y}{the vector of classes (+1 or -1)}
 
-\item{lambda}{le poid de la regularisation(0.01 par defaut)}
+\item{lambda}{the regularization weight (default is 0.01)}
 
-\item{n_iter}{le nombre d'iteration ( 200 par defaut)}
+\item{n_iter}{the number of iterations (default is 200)}
 
-\item{pas}{le type de pas ; "decroissant" ou "constant"}
+\item{pas}{the type of step size; "decreasing" or "constant"}
 
-\item{a}{la valeur de base du pas (1 par defaut)}
+\item{a}{the base value of the step size (default is 1)}
 }
 \value{
-une liste avec w , b, f_best  et  l'historique de convergence
+a list containing w, b, f_best, and the convergence history
 }
 \description{
-Trouver la droite qui separe deux classes(+1 et -1) en minimisant
-lambda/2 * ||w||^2 + moyenne des pertes hinge, avec sous_gradient()
+Finds the line that separates two classes (+1 and -1) by minimizing
+lambda/2 * ||w||^2 + average hinge loss, using subgradient()
 }

@@ -2,26 +2,26 @@
 % Please edit documentation in R/sous_gradient.R
 \name{sous_gradient}
 \alias{sous_gradient}
-\title{Algorithme du sous-gradient}
+\title{Subgradient Algorithm}
 \usage{
 sous_gradient(f, sous_grad, x0, n_iter = 100, pas = "decroissant", a = 1)
 }
 \arguments{
-\item{f}{la fonction à minimiser.}
+\item{f}{the function to minimize.}
 
-\item{sous_grad}{la fonction qui donne un sous-gradient de f en x(donne la pente et le point de depart).}
+\item{sous_grad}{the function providing a subgradient of f at x (returns the slope and starting point).}
 
-\item{x0}{le point de depart}
+\item{x0}{the starting point}
 
-\item{n_iter}{le nombre d'itération (100 par  defaut).}
+\item{n_iter}{the number of iterations (default is 100).}
 
-\item{pas}{le type de pas : "decroissant" (a/k), ou "croissant"(a).}
+\item{pas}{the type of step size: "decreasing" (a/k), or "constant" (a).}
 
-\item{a}{la valeur de base du pas(1 par défaut)}
+\item{a}{the base value of the step size (default is 1).}
 }
 \value{
-une liste avec x_best ,f_best et l'historique de f_best.
+a list containing x_best, f_best, and the history of f_best values.
 }
 \description{
-minimise une fonction convexe meme non derivable.
+Minimizes a convex function, even if non-differentiable.
 }

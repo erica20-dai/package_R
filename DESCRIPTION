@@ -1,12 +1,16 @@
 Package: sousgradient
 Type : Package
-Title: Algorithme du Sous-Gradient Appliqué au SVM
+Title: Subgraindient Algorithm Applied to SVM
 Version: 0.1.0
 Authors@R: 
     person("Erica", " Koko Ndoumbe", email ="ericadaina41@gmail.com", role = c("aut", "cre"))
-Description: Implémente l'algorithme du sous-gradient pour minimiser des fonctions convexes non dérivables,
-             et l'applique à un svm lineaire.Le package fournit des données simulées, des fonction
-              de prédiction et des graphiques de convergences.
+Description:  Implements the subgradient algorithm to minimize non-differentiable
+    convex functions, with constant or decreasing step sizes. The algorithm is
+    applied to binary classification with a linear support vector machine
+    (SVM), by minimizing the regularized hinge loss. The package provides
+    simulated data, a function to predict the class of new observations, and
+    plots of the separating line and of the convergence of the algorithm,
+    making it possible to compare several step-size strategies.
 License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8

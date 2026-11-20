@@ -2,18 +2,18 @@
 % Please edit documentation in R/donnees.R
 \name{generer_donees}
 \alias{generer_donees}
-\title{Génére deux groupes  de points  pour le SVM(machine à vecteur de support)}
+\title{Generates two groups of points for the SVM (Support Vector Machine)}
 \usage{
 generer_donees(n = 40, seed = 1)
 }
 \arguments{
-\item{n}{le nombre  total de points (pair , 40 par defaut)}
+\item{n}{the total number of points (even number, default is 40)}
 
-\item{seed}{un nombre fixé pour obtenir toujours  les mêmes  données}
+\item{seed}{a fixed number to always obtain the same data}
 }
 \value{
-un tableau avec x1, x2, et la classe y(+1 ou-1)
+a data frame with x1, x2, and the class y (+1 or -1)
 }
 \description{
-Génére deux groupes  de points  pour le SVM(machine à vecteur de support)
+Generates two groups of points for the SVM (Support Vector Machine)
 }

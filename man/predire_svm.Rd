@@ -2,16 +2,19 @@
 % Please edit documentation in R/predire_svm.R
 \name{predire_svm}
 \alias{predire_svm}
-\title{Prédit la classe de nouveaux individus avec un svm}
+\title{Predict the class of new observations with an SVM}
 \usage{
 predire_svm(modele, x_nouveau)
 }
-\description{
-@param modele  resultat de svm_sousgradient()
-@param x_nouveau un tableau ou une matrice avec les mêmes colonnes
-que celle utilisées pour entrainer le modele
+\arguments{
+\item{modele}{The result of \code{svm_sousgradient()}.}
+
+\item{x_nouveau}{A data frame or a matrix with the same columns as those
+used to train the model.}
 }
-\details{
-@return un vecteur  de classes predites(+1 ou-1)
-@export
+\value{
+A vector of predicted classes (+1 or -1).
+}
+\description{
+Predict the class of new observations with an SVM
 }
